@@ -1,0 +1,20 @@
+[package]
+name = "madlion-gamepad"
+version = "1.0.0"
+edition = "2024"
+description = "Gamepad emulation daemon for Madlion analog magnetic Hall-effect keyboards"
+license = "MIT"
+readme = "README.md"
+keywords = ["gamepad", "keyboard", "hall-effect", "analog", "uinput"]
+categories = ["hardware-support", "emulators", "gui"]
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+crossterm = "0.28"
+libc = "0.2"
+libadwaita = { version = "0.7", features = ["v1_5"] }
+gtk4 = { version = "0.9", features = ["v4_12"] }
+glib = "0.20"
+cairo-rs = { version = "0.20", features = ["png"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
